@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.EmailController">
+   <children>
+      <TextField fx:id="contField" layoutX="30.0" layoutY="28.0" prefHeight="34.0" prefWidth="223.0" promptText="To...">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="argField" layoutX="32.0" layoutY="83.0" prefHeight="34.0" prefWidth="543.0" promptText="Argument...">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="messageField" alignment="TOP_LEFT" layoutX="32.0" layoutY="134.0" prefHeight="200.0" prefWidth="543.0" promptText="New message....">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="backBtn" layoutX="32.0" layoutY="351.0" mnemonicParsing="false" onAction="#prevScene" prefHeight="35.0" prefWidth="132.0" text="Back">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="sendBtn" layoutX="182.0" layoutY="351.0" mnemonicParsing="false" onAction="#sendEmail" prefHeight="35.0" prefWidth="132.0" text="Send">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="containersBox" layoutX="344.0" layoutY="28.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="34.0" prefWidth="174.0" promptText="               Recipients">
+         <effect>
+            <Bloom threshold="1.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ComboBox>
+      <Button fx:id="addBtn" layoutX="259.0" layoutY="28.0" mnemonicParsing="false" onAction="#addContainer" prefHeight="34.0" prefWidth="45.0" text="Add" />
+      <Button fx:id="deleteBtn" layoutX="530.0" layoutY="28.0" mnemonicParsing="false" onAction="#deleteContainer" prefHeight="34.0" prefWidth="45.0" text="Del" />
+   </children>
+</AnchorPane>

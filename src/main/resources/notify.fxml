@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="337.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.NotifyController">
+   <top>
+      <Label alignment="CENTER" prefHeight="143.0" prefWidth="221.0" text="Notify:" textFill="#29f500" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="57.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <Label fx:id="notifyField" alignment="TOP_CENTER" prefHeight="118.0" prefWidth="413.0" text="Wrong parameters" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </center>
+</BorderPane>

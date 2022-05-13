@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.LoginController">
+   <children>
+      <Label layoutX="251.0" layoutY="23.0" prefHeight="82.0" prefWidth="158.0" text="Login">
+         <font>
+            <Font name="Segoe UI Bold" size="56.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="192.0" layoutY="273.0" prefHeight="51.0" prefWidth="288.0" />
+      <Label layoutX="77.0" layoutY="182.0" prefHeight="51.0" prefWidth="72.0" text="Email:">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="273.0" prefHeight="51.0" prefWidth="113.0" text="Password:">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="sendBtn" layoutX="283.0" layoutY="355.0" mnemonicParsing="false" onAction="#login" prefHeight="51.0" prefWidth="94.0" text="Send">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="email" layoutX="192.0" layoutY="182.0" prefHeight="51.0" prefWidth="288.0" promptText="example@mail.com" />
+      <Label fx:id="errorField" alignment="CENTER" layoutX="193.0" layoutY="129.0" prefHeight="33.0" prefWidth="288.0" textFill="#ff0202" />
+   </children>
+</AnchorPane>

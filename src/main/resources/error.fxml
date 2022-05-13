@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane prefHeight="337.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.ErrorController">
+   <top>
+      <Label prefHeight="114.0" prefWidth="221.0" text="ERROR:" textFill="RED" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="57.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <Label fx:id="errorField" alignment="TOP_CENTER" prefHeight="123.0" prefWidth="413.0" text="Wrong parameters" textFill="#ee0000" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </center>
+</BorderPane>
